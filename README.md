@@ -1,2 +1,4 @@
 # kubernetes-troubleshooting
-Hins and trick for troubleshooting Kubernetes in daily usage
+Hints and trick for troubleshooting Kubernetes in daily usage
+
+I appreciate any kind of contributions to this repo 
