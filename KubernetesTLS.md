@@ -58,3 +58,15 @@ IP = 172.23.0.32
 ```
 openssl x509 -req -in apiserver.csr -CA ca.crt -CAkey ca.key -out apiserver.crt
 ```
+
+### Health Chech for Certificates
+If the cluster setup was by `kubeadm` then check the pod command args to find certificates paths
+Since you know where the certificates are located, you can make healtcheck via
+```
+openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text -noout
+```
+Check points
+[X] Name under Subject section
+[X] Alternative Name
+[X] Expire date/validation
+[X] Issuer -> Who is the issuer
