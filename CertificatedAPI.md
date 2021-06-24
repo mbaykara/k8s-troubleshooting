@@ -18,9 +18,13 @@ spec:
   - key encipherment
   - server auth
   reques
-   //base64 encoded csr
+   alice.csr | base64 to here
 ```
-
+3. Review the request
+`kubectl get csr`
 4. Aprove Requests
+`kubectl certificate approve alice`
 5. Share Certs to Users
+`kubectl get csr alice -o yaml ` decode and share with the user
 
+control manager is responsible for certificate signing/approving
