@@ -7,7 +7,7 @@
 Administrator takes the key and create a `CertificateSigninRequest` object
 ```
 apiVersion: certificates.k8s.io/v1beta1
-kind: CertificatesSigningRequest
+kind: CertificateSigningRequest
 metadata:
   name: alice
 spec:
